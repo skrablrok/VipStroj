@@ -55,6 +55,8 @@ const gallery = document.querySelector('.scroll_galerija');
 const bar = document.querySelector('.bar');
 const thumb = document.querySelector('.scroll');
 
+if (gallery && bar && thumb) {
+
 let dragging = false;
 let startY;
 let startThumbTop;
@@ -86,6 +88,8 @@ document.addEventListener('mousemove', e => {
 });
 
 document.addEventListener('mouseup', () => dragging = false);
+
+}
 
 
 
@@ -186,7 +190,7 @@ function animateStep() {
     }, 5000); // mora biti *isti* čas kot CSS
 }
 
-animateStep();
+if (steps.length && progress) animateStep();
 
 
 
@@ -293,4 +297,4 @@ function updateHero() {
   }, 300);
 }
 
-setInterval(updateHero, 5000);
+if (glava && naslovEl) setInterval(updateHero, 5000);

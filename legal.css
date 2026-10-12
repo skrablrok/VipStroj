@@ -1,0 +1,120 @@
+/* Pravne strani (zasebnost, piškotki, pogoji) – dopolnilo k o_nas.css */
+
+.hero.legal_hero{
+    height: 42vh;
+}
+.hero.legal_hero #podnaslov{
+    width: 60%;
+}
+
+.legal{
+    width: min(900px, 100% - 32px);
+    margin: 4vw auto 2vw;
+    color: #e6e6e6;
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+}
+.legal .posodobljeno{
+    color: rgba(255,255,255,.55);
+    font-size: 13px;
+    margin-bottom: 2em;
+}
+.legal h2{
+    font-family: Oswald, sans-serif;
+    color: #ffffff;
+    font-size: clamp(20px, 1.6vw, 28px);
+    font-weight: 500;
+    margin: 2.2em 0 .6em;
+    padding-left: 12px;
+    border-left: 3px solid #D01D23;
+}
+.legal h3{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 1.4em 0 .4em;
+}
+.legal p, .legal li{
+    margin-bottom: .7em;
+}
+.legal ul{
+    padding-left: 1.3em;
+}
+.legal a{
+    color: #ff5a5f;
+}
+.legal a:hover{
+    color: #ffffff;
+}
+.legal .podatki{
+    border: 1px solid rgba(255,255,255,.12);
+    background: rgba(255,255,255,.03);
+    padding: 16px 20px;
+    border-radius: 2px;
+}
+.legal table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    font-size: 14px;
+}
+.legal th, .legal td{
+    text-align: left;
+    vertical-align: top;
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(255,255,255,.12);
+}
+.legal th{
+    color: #ffffff;
+    font-weight: 600;
+    background: rgba(255,255,255,.04);
+}
+.legal .tabela{
+    overflow-x: auto;
+}
+.legal button.cookie-settings-btn{
+    background-color: #D01D23;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 2px;
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+.legal button.cookie-settings-btn:hover{
+    background-color: #a8161b;
+}
+
+@media (max-width: 750px){
+    .hero.legal_hero #podnaslov{
+        width: 80%;
+    }
+    .legal{
+        font-size: 14px;
+    }
+    /* tabela piškotkov kot kartice */
+    .legal table, .legal tbody, .legal tr, .legal td{
+        display: block;
+        width: 100%;
+    }
+    .legal thead{
+        display: none;
+    }
+    .legal tr{
+        border: 1px solid rgba(255,255,255,.12);
+        margin-bottom: 12px;
+    }
+    .legal td{
+        border-bottom: 1px solid rgba(255,255,255,.06);
+        padding: 8px 12px;
+    }
+    .legal td::before{
+        content: attr(data-label);
+        display: block;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 12px;
+    }
+}
