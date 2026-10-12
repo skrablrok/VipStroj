@@ -629,7 +629,7 @@ hr{
 #o_nas_kontakt{
     width: 80%;
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #303030;
 }
 .leva{
@@ -645,7 +645,7 @@ hr{
     justify-content: space-around;
     padding: 3vw;
     background-color: #FFFFFF;
-    height: 50vh ;
+    min-height: 50vh ;
 }
 #onas #naslov{
     color: #D01D23;
@@ -676,7 +676,7 @@ hr{
     display: flex;
     flex-direction: column;
     padding: 3vw;
-    height: 50vh;
+    min-height: 50vh;
 }
 label {
     display: block;
@@ -766,7 +766,7 @@ button:hover {
         gap: 3vw;
         padding: 9vw;
         background-color: #FFFFFF;
-        height: 50vh ;
+        min-height: 50vh ;
     }
     #onas #naslov{
         color: #D01D23;
@@ -810,7 +810,7 @@ button:hover {
         flex-direction: column;
         justify-content: center;
         padding: 3vw;
-        height: 50vh;
+        min-height: 50vh;
     }
 
 }

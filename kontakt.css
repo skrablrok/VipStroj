@@ -401,7 +401,7 @@ ul li a {
     display: flex;
     border-width: 0.01cm;
     width: 90%;
-    height: 60vh;
+    min-height: 60vh;
 }
 
 .contact_left{
@@ -501,7 +501,7 @@ tr td{
 @media(max-width:1048px){
     .contac_box{
         flex-direction: column ;
-        height: 120vh;
+        min-height: 120vh;
     }
     .contact_left h3{
         font-size: clamp(25px, 4vw, 50px);
